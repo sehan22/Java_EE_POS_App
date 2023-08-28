@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orders</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" rel="stylesheet">
+    <style>
+        ul > li {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!--header-->
+<header class="jumbotron bg-primary text-white p-3">
+    <h1 class="position-absolute" id="nav"></h1>
+    <ul class="list-group list-group-horizontal text-danger justify-content-end font-weight-bold">
+        <li class="list-group-item bg-white" id="lnkHome"><a href="../index.html">Home</a></li>
+        <li class="list-group-item bg-white text-white" id="lnkCustomer"><a href="customer.html">Customer</a>
+        </li>
+        <li class="list-group-item bg-white" id="lnkItem"><a href="item.html">Item</a></li>
+        <li class="list-group-item bg-danger" id="lnkOrders"><a class="text-white" href="orders.html">Orders</a></li>
+        <li class="list-group-item bg-white" id="lnkPlaceOrders"><a href="purchase-order.html">Place Order</a></li>
+    </ul>
+</header>
+
+<!--customer content-->
+<main class="container-fluid" id="customerContent">
+    <div class="col-12 col-lg-12 mt-3">
+        <table class="table table-bordered table-hover">
+            <thead class="bg-dark text-white">
+            <tr>
+                <th scope="col">Order ID</th>
+                <th scope="col">Date</th>
+                <th scope="col">Customer ID</th>
+                <th scope="col">Items ID(s)</th>
+                <th scope="col">Discount</th>
+                <th scope="col">Total</th>
+            </tr>
+            </thead>
+            <tbody id="tblOrders">
+
+            </tbody>
+        </table>
+    </div>
+    </section>
+</main>
+
+<script src="../assets/js/frameworks/jquery-3.6.1.min.js"></script>
+<script src="../Controller/OrdersController.js"></script>
+<script src="../assets/js/frameworks/bootstrap.min.js"></script>
+
+</body>
+</html>
