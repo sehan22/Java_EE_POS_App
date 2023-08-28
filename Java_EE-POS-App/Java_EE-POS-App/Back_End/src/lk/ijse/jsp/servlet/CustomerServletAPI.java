@@ -165,6 +165,8 @@ public class CustomerServletAPI extends HttpServlet {
         resp.addHeader("Access-Control-Allow-Methods", "DELETE");
         resp.addHeader("Access-Control-Allow-Headers", "Content-type");
     }
+
+    /*doOption*/
 }
 
 
